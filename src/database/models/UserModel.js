@@ -1,8 +1,6 @@
 const { DataTypes } = require("sequelize");
 const Sequelize = require("../setup/database");
 
-// Define the Todo model
-
 const UserModel = Sequelize.define(
   "User",
   {
