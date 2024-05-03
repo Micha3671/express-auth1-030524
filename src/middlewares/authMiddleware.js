@@ -1,5 +1,5 @@
 // Zuerst werden die Kontanten festgestzt, die wir benötigen //
-const { StatusCodes, ReasonPhrases } = require("http-status-codes");
+const { StatusCodes } = require("http-status-codes");
 const AccessTokens = require("../services/auth/AccessToken");
 // Hier wird die entsprechende Middleware-Funktion geschrieben //
 function authMiddleWare(req, res, next) {
