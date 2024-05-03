@@ -5,9 +5,8 @@ const UserModel = require("../../database/models/UserModel");
 const UserRouter = Router();
 
 // GET REQUESTS
+//  Der Nutzer wird hier basierend auf der userId aus dem Token ermittelt
 UserRouter.get("/currentuser", async (req, res) => {
-  // TODO: der Nutzer soll basierend auf der userId aus dem Token ermittelt werden
-
   const userId = req.user.userId;
 
   console.log("userId", userId);

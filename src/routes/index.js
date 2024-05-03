@@ -6,7 +6,7 @@ const authMiddleWare = require("../middlewares/authMiddleware");
 const AppRouter = Router();
 
 AppRouter.use("/auth", AuthRouter);
-// TODO: Die Users Router soll die auth Middleware durchlaufen
+// Die Users Router durchläuft die auth Middleware
 AppRouter.use("/users", authMiddleWare, UserRouter);
 
 module.exports = { AppRouter };
